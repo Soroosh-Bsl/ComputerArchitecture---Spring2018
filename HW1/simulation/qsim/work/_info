@@ -1,0 +1,178 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/University/Courses/Computer Architecture/HW1/simulation/qsim
+vcarr_select_16_using4
+Z1 !s110 1520145545
+!i10b 1
+!s100 6V34W;laSbn22IgIFFz421
+IW06]E0?ojBlB^X?K`2cUG2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1520145541
+Z3 8HW1.vo
+Z4 FHW1.vo
+Z5 L0 32
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1520145544.000000
+Z7 !s107 HW1.vo|
+Z8 !s90 -work|work|HW1.vo|
+!i113 1
+Z9 o-work work
+Z10 tCvgOpt 0
+vcarr_select_16_using4_vlg_vec_tst
+R1
+!i10b 1
+!s100 n9G64ia@i7W:CGl1@ljzn3
+IQ2o8nYgGHRGQmnn^=@;O41
+R2
+R0
+w1520145532
+8Waveform2.vwf.vt
+FWaveform2.vwf.vt
+Z11 L0 30
+R6
+r1
+!s85 0
+31
+!s108 1520145545.000000
+!s107 Waveform2.vwf.vt|
+!s90 -work|work|Waveform2.vwf.vt|
+!i113 1
+R9
+R10
+vcarry_select_adder_16
+Z12 !s110 1519292666
+!i10b 1
+!s100 RjYG2m`F]2O8O]fcTY<M10
+INN3c>ZAJQCjdPzX`ffXX73
+R2
+R0
+w1519292662
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+!s108 1519292665.000000
+R7
+R8
+!i113 1
+R9
+R10
+vcarry_select_adder_16_vlg_vec_tst
+R12
+!i10b 1
+!s100 2_@;h^^k[kjKS0j[@dlP03
+I_XD0b2bA9`m_ZeEGofg4T2
+R2
+R0
+w1519292655
+Z13 8Waveform1.vwf.vt
+Z14 FWaveform1.vwf.vt
+R11
+R6
+r1
+!s85 0
+31
+!s108 1519292666.000000
+Z15 !s107 Waveform1.vwf.vt|
+Z16 !s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R9
+R10
+vcarry_select_adder_unit
+Z17 !s110 1518902164
+!i10b 1
+!s100 :IZ7hLd3P5G5G6C1zjQ:<1
+I:V2mjP9lYgIC?6IY7agd;3
+R2
+R0
+w1518902162
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z18 !s108 1518902164.000000
+R7
+R8
+!i113 1
+R9
+R10
+vcarry_select_adder_unit_vlg_vec_tst
+R17
+!i10b 1
+!s100 eDGSGQ3;aKbfKnLcn]Jd20
+Ic0j96bQLM]CZQ`bCeOc:H2
+R2
+R0
+w1518902156
+R13
+R14
+R11
+R6
+r1
+!s85 0
+31
+R18
+R15
+R16
+!i113 1
+R9
+R10
+vripple_carry_adder
+Z19 !s110 1519292871
+!i10b 1
+!s100 >DLoC2lk[I0U1T3_M5ld_0
+IWU[7_gdAimh`W^Hdm_CYB2
+R2
+R0
+w1519292870
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z20 !s108 1519292871.000000
+R7
+R8
+!i113 1
+R9
+R10
+vripple_carry_adder_vlg_vec_tst
+R19
+!i10b 1
+!s100 1o`B30dB42e0B6dFBNRLJ0
+IXi`AXaf2?VLia9B;nee941
+R2
+R0
+w1519292863
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+R11
+R6
+r1
+!s85 0
+31
+R20
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R9
+R10

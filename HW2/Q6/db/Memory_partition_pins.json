@@ -1,0 +1,261 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "out_one[15]",
+					"strict" : false
+				},
+				{
+					"name" : "out_one[14]",
+					"strict" : false
+				},
+				{
+					"name" : "out_one[13]",
+					"strict" : false
+				},
+				{
+					"name" : "out_one[12]",
+					"strict" : false
+				},
+				{
+					"name" : "out_one[11]",
+					"strict" : false
+				},
+				{
+					"name" : "out_one[10]",
+					"strict" : false
+				},
+				{
+					"name" : "out_one[9]",
+					"strict" : false
+				},
+				{
+					"name" : "out_one[8]",
+					"strict" : false
+				},
+				{
+					"name" : "out_one[7]",
+					"strict" : false
+				},
+				{
+					"name" : "out_one[6]",
+					"strict" : false
+				},
+				{
+					"name" : "out_one[5]",
+					"strict" : false
+				},
+				{
+					"name" : "out_one[4]",
+					"strict" : false
+				},
+				{
+					"name" : "out_one[3]",
+					"strict" : false
+				},
+				{
+					"name" : "out_one[2]",
+					"strict" : false
+				},
+				{
+					"name" : "out_one[1]",
+					"strict" : false
+				},
+				{
+					"name" : "out_one[0]",
+					"strict" : false
+				},
+				{
+					"name" : "out_two[15]",
+					"strict" : false
+				},
+				{
+					"name" : "out_two[14]",
+					"strict" : false
+				},
+				{
+					"name" : "out_two[13]",
+					"strict" : false
+				},
+				{
+					"name" : "out_two[12]",
+					"strict" : false
+				},
+				{
+					"name" : "out_two[11]",
+					"strict" : false
+				},
+				{
+					"name" : "out_two[10]",
+					"strict" : false
+				},
+				{
+					"name" : "out_two[9]",
+					"strict" : false
+				},
+				{
+					"name" : "out_two[8]",
+					"strict" : false
+				},
+				{
+					"name" : "out_two[7]",
+					"strict" : false
+				},
+				{
+					"name" : "out_two[6]",
+					"strict" : false
+				},
+				{
+					"name" : "out_two[5]",
+					"strict" : false
+				},
+				{
+					"name" : "out_two[4]",
+					"strict" : false
+				},
+				{
+					"name" : "out_two[3]",
+					"strict" : false
+				},
+				{
+					"name" : "out_two[2]",
+					"strict" : false
+				},
+				{
+					"name" : "out_two[1]",
+					"strict" : false
+				},
+				{
+					"name" : "out_two[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Address_one[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Address_one[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Address_one[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Address_two[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Address_two[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Address_two[2]",
+					"strict" : false
+				},
+				{
+					"name" : "WData[15]",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "ClearAddress[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Clear",
+					"strict" : false
+				},
+				{
+					"name" : "ClearAddress[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ClearAddress[2]",
+					"strict" : false
+				},
+				{
+					"name" : "WAddress[0]",
+					"strict" : false
+				},
+				{
+					"name" : "WEnable",
+					"strict" : false
+				},
+				{
+					"name" : "WAddress[1]",
+					"strict" : false
+				},
+				{
+					"name" : "WAddress[2]",
+					"strict" : false
+				},
+				{
+					"name" : "WData[14]",
+					"strict" : false
+				},
+				{
+					"name" : "WData[13]",
+					"strict" : false
+				},
+				{
+					"name" : "WData[12]",
+					"strict" : false
+				},
+				{
+					"name" : "WData[11]",
+					"strict" : false
+				},
+				{
+					"name" : "WData[10]",
+					"strict" : false
+				},
+				{
+					"name" : "WData[9]",
+					"strict" : false
+				},
+				{
+					"name" : "WData[8]",
+					"strict" : false
+				},
+				{
+					"name" : "WData[7]",
+					"strict" : false
+				},
+				{
+					"name" : "WData[6]",
+					"strict" : false
+				},
+				{
+					"name" : "WData[5]",
+					"strict" : false
+				},
+				{
+					"name" : "WData[4]",
+					"strict" : false
+				},
+				{
+					"name" : "WData[3]",
+					"strict" : false
+				},
+				{
+					"name" : "WData[2]",
+					"strict" : false
+				},
+				{
+					"name" : "WData[1]",
+					"strict" : false
+				},
+				{
+					"name" : "WData[0]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

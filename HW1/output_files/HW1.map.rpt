@@ -1,0 +1,635 @@
+Analysis & Synthesis report for HW1
+Sun Mar 04 10:07:13 2018
+Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Parameter Settings for User Entity Instance: carry_select_unit4:inst3|MUX:inst14
+ 10. Parameter Settings for User Entity Instance: carry_select_unit4:inst3|MUX:inst10
+ 11. Parameter Settings for User Entity Instance: carry_select_unit4:inst3|MUX:inst11
+ 12. Parameter Settings for User Entity Instance: carry_select_unit4:inst3|MUX:inst12
+ 13. Parameter Settings for User Entity Instance: carry_select_unit4:inst3|MUX:inst13
+ 14. Parameter Settings for User Entity Instance: carry_select_unit4:inst2|MUX:inst14
+ 15. Parameter Settings for User Entity Instance: carry_select_unit4:inst2|MUX:inst10
+ 16. Parameter Settings for User Entity Instance: carry_select_unit4:inst2|MUX:inst11
+ 17. Parameter Settings for User Entity Instance: carry_select_unit4:inst2|MUX:inst12
+ 18. Parameter Settings for User Entity Instance: carry_select_unit4:inst2|MUX:inst13
+ 19. Parameter Settings for User Entity Instance: carry_select_unit4:inst1|MUX:inst14
+ 20. Parameter Settings for User Entity Instance: carry_select_unit4:inst1|MUX:inst10
+ 21. Parameter Settings for User Entity Instance: carry_select_unit4:inst1|MUX:inst11
+ 22. Parameter Settings for User Entity Instance: carry_select_unit4:inst1|MUX:inst12
+ 23. Parameter Settings for User Entity Instance: carry_select_unit4:inst1|MUX:inst13
+ 24. Parameter Settings for User Entity Instance: carry_select_unit4:inst|MUX:inst14
+ 25. Parameter Settings for User Entity Instance: carry_select_unit4:inst|MUX:inst10
+ 26. Parameter Settings for User Entity Instance: carry_select_unit4:inst|MUX:inst11
+ 27. Parameter Settings for User Entity Instance: carry_select_unit4:inst|MUX:inst12
+ 28. Parameter Settings for User Entity Instance: carry_select_unit4:inst|MUX:inst13
+ 29. Post-Synthesis Netlist Statistics for Top Partition
+ 30. Elapsed Time Per Partition
+ 31. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Sun Mar 04 10:07:13 2018       ;
+; Quartus Prime Version           ; 15.1.0 Build 185 10/21/2015 SJ Lite Edition ;
+; Revision Name                   ; HW1                                         ;
+; Top-level Entity Name           ; carr_select_16_using4                       ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 50                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                                ;
++---------------------------------------------------------------------------------+-----------------------+--------------------+
+; Option                                                                          ; Setting               ; Default Value      ;
++---------------------------------------------------------------------------------+-----------------------+--------------------+
+; Device                                                                          ; 5CGXFC7C7F23C8        ;                    ;
+; Top-level entity name                                                           ; carr_select_16_using4 ; HW1                ;
+; Family name                                                                     ; Cyclone V             ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                   ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                    ; On                 ;
+; Enable compact report table                                                     ; Off                   ; Off                ;
+; Restructure Multiplexers                                                        ; Auto                  ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                   ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                   ; Off                ;
+; Preserve fewer node names                                                       ; On                    ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                       ; Off                   ; Off                ;
+; Verilog Version                                                                 ; Verilog_2001          ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993             ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto                  ; Auto               ;
+; Safe State Machine                                                              ; Off                   ; Off                ;
+; Extract Verilog State Machines                                                  ; On                    ; On                 ;
+; Extract VHDL State Machines                                                     ; On                    ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                   ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000                  ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                   ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                    ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                    ; On                 ;
+; Parallel Synthesis                                                              ; On                    ; On                 ;
+; DSP Block Balancing                                                             ; Auto                  ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                    ; On                 ;
+; Power-Up Don't Care                                                             ; On                    ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                   ; Off                ;
+; Remove Duplicate Registers                                                      ; On                    ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                   ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                   ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                   ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                   ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                   ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                    ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                   ; Off                ;
+; Optimization Technique                                                          ; Balanced              ; Balanced           ;
+; Carry Chain Length                                                              ; 70                    ; 70                 ;
+; Auto Carry Chains                                                               ; On                    ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                    ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                   ; Off                ;
+; Auto ROM Replacement                                                            ; On                    ; On                 ;
+; Auto RAM Replacement                                                            ; On                    ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                    ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto                  ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto                  ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                    ; On                 ;
+; Strict RAM Replacement                                                          ; Off                   ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                    ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                   ; Off                ;
+; Auto Resource Sharing                                                           ; Off                   ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                   ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                   ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                   ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                    ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                   ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                    ; On                 ;
+; Report Parameter Settings                                                       ; On                    ; On                 ;
+; Report Source Assignments                                                       ; On                    ; On                 ;
+; Report Connectivity Checks                                                      ; On                    ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                   ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                     ; 3                  ;
+; PowerPlay Power Optimization During Synthesis                                   ; Normal compilation    ; Normal compilation ;
+; HDL message level                                                               ; Level2                ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                   ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000                  ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000                  ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                   ; 100                ;
+; Clock MUX Protection                                                            ; On                    ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                   ; Off                ;
+; Block Design Naming                                                             ; Auto                  ; Auto               ;
+; SDC constraint protection                                                       ; Off                   ; Off                ;
+; Synthesis Effort                                                                ; Auto                  ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                    ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                   ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium                ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto                  ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                    ; On                 ;
+; Synthesis Seed                                                                  ; 1                     ; 1                  ;
+; Automatic Parallel Synthesis                                                    ; On                    ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                   ; Off                ;
++---------------------------------------------------------------------------------+-----------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                        ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                              ; Library ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------+---------+
+; half_adder.bdf                   ; yes             ; User Block Diagram/Schematic File  ; D:/University/Courses/Computer Architecture/HW1/half_adder.bdf            ;         ;
+; full_adder.bdf                   ; yes             ; User Block Diagram/Schematic File  ; D:/University/Courses/Computer Architecture/HW1/full_adder.bdf            ;         ;
+; carry_select_unit4.bdf           ; yes             ; User Block Diagram/Schematic File  ; D:/University/Courses/Computer Architecture/HW1/carry_select_unit4.bdf    ;         ;
+; carr_select_16_using4.bdf        ; yes             ; User Block Diagram/Schematic File  ; D:/University/Courses/Computer Architecture/HW1/carr_select_16_using4.bdf ;         ;
+; mux.tdf                          ; yes             ; Megafunction                       ; c:/altera_lite/15.1/quartus/libraries/megafunctions/mux.tdf               ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                       ; c:/altera_lite/15.1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                       ; c:/altera_lite/15.1/quartus/libraries/megafunctions/lpm_mux.tdf           ;         ;
+; aglobal151.inc                   ; yes             ; Megafunction                       ; c:/altera_lite/15.1/quartus/libraries/megafunctions/aglobal151.inc        ;         ;
+; muxlut.inc                       ; yes             ; Megafunction                       ; c:/altera_lite/15.1/quartus/libraries/megafunctions/muxlut.inc            ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                       ; c:/altera_lite/15.1/quartus/libraries/megafunctions/bypassff.inc          ;         ;
+; altshift.inc                     ; yes             ; Megafunction                       ; c:/altera_lite/15.1/quartus/libraries/megafunctions/altshift.inc          ;         ;
+; db/mux_pjc.tdf                   ; yes             ; Auto-Generated Megafunction        ; D:/University/Courses/Computer Architecture/HW1/db/mux_pjc.tdf            ;         ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                                                                   ;
++---------------------------------------------+-------------------------------------------------------------------------------------------------+
+; Resource                                    ; Usage                                                                                           ;
++---------------------------------------------+-------------------------------------------------------------------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 19                                                                                              ;
+;                                             ;                                                                                                 ;
+; Combinational ALUT usage for logic          ; 30                                                                                              ;
+;     -- 7 input functions                    ; 0                                                                                               ;
+;     -- 6 input functions                    ; 7                                                                                               ;
+;     -- 5 input functions                    ; 8                                                                                               ;
+;     -- 4 input functions                    ; 3                                                                                               ;
+;     -- <=3 input functions                  ; 12                                                                                              ;
+;                                             ;                                                                                                 ;
+; Dedicated logic registers                   ; 0                                                                                               ;
+;                                             ;                                                                                                 ;
+; I/O pins                                    ; 50                                                                                              ;
+;                                             ;                                                                                                 ;
+; Total DSP Blocks                            ; 0                                                                                               ;
+;                                             ;                                                                                                 ;
+; Maximum fan-out node                        ; carry_select_unit4:inst|mux:inst14|lpm_mux:$00001|mux_pjc:auto_generated|l1_w0_n0_mux_dataout~0 ;
+; Maximum fan-out                             ; 4                                                                                               ;
+; Total fan-out                               ; 192                                                                                             ;
+; Average fan-out                             ; 1.48                                                                                            ;
++---------------------------------------------+-------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                              ;
++--------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node           ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                              ; Library Name ;
++--------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------+--------------+
+; |carr_select_16_using4               ; 30 (0)            ; 0 (0)        ; 0                 ; 0          ; 50   ; 0            ; |carr_select_16_using4                                                                           ; work         ;
+;    |carry_select_unit4:inst1|        ; 9 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst1                                                  ; work         ;
+;       |mux:inst10|                   ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst1|mux:inst10                                       ; work         ;
+;          |lpm_mux:$00001|            ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst1|mux:inst10|lpm_mux:$00001                        ; work         ;
+;             |mux_pjc:auto_generated| ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst1|mux:inst10|lpm_mux:$00001|mux_pjc:auto_generated ; work         ;
+;       |mux:inst11|                   ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst1|mux:inst11                                       ; work         ;
+;          |lpm_mux:$00001|            ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst1|mux:inst11|lpm_mux:$00001                        ; work         ;
+;             |mux_pjc:auto_generated| ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst1|mux:inst11|lpm_mux:$00001|mux_pjc:auto_generated ; work         ;
+;       |mux:inst12|                   ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst1|mux:inst12                                       ; work         ;
+;          |lpm_mux:$00001|            ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst1|mux:inst12|lpm_mux:$00001                        ; work         ;
+;             |mux_pjc:auto_generated| ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst1|mux:inst12|lpm_mux:$00001|mux_pjc:auto_generated ; work         ;
+;       |mux:inst13|                   ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst1|mux:inst13                                       ; work         ;
+;          |lpm_mux:$00001|            ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst1|mux:inst13|lpm_mux:$00001                        ; work         ;
+;             |mux_pjc:auto_generated| ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst1|mux:inst13|lpm_mux:$00001|mux_pjc:auto_generated ; work         ;
+;       |mux:inst14|                   ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst1|mux:inst14                                       ; work         ;
+;          |lpm_mux:$00001|            ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst1|mux:inst14|lpm_mux:$00001                        ; work         ;
+;             |mux_pjc:auto_generated| ; 5 (5)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst1|mux:inst14|lpm_mux:$00001|mux_pjc:auto_generated ; work         ;
+;    |carry_select_unit4:inst2|        ; 8 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst2                                                  ; work         ;
+;       |full_adder:inst5|             ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst2|full_adder:inst5                                 ; work         ;
+;          |half_adder:inst|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst2|full_adder:inst5|half_adder:inst                 ; work         ;
+;       |mux:inst10|                   ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst2|mux:inst10                                       ; work         ;
+;          |lpm_mux:$00001|            ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst2|mux:inst10|lpm_mux:$00001                        ; work         ;
+;             |mux_pjc:auto_generated| ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst2|mux:inst10|lpm_mux:$00001|mux_pjc:auto_generated ; work         ;
+;       |mux:inst11|                   ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst2|mux:inst11                                       ; work         ;
+;          |lpm_mux:$00001|            ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst2|mux:inst11|lpm_mux:$00001                        ; work         ;
+;             |mux_pjc:auto_generated| ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst2|mux:inst11|lpm_mux:$00001|mux_pjc:auto_generated ; work         ;
+;       |mux:inst12|                   ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst2|mux:inst12                                       ; work         ;
+;          |lpm_mux:$00001|            ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst2|mux:inst12|lpm_mux:$00001                        ; work         ;
+;             |mux_pjc:auto_generated| ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst2|mux:inst12|lpm_mux:$00001|mux_pjc:auto_generated ; work         ;
+;       |mux:inst13|                   ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst2|mux:inst13                                       ; work         ;
+;          |lpm_mux:$00001|            ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst2|mux:inst13|lpm_mux:$00001                        ; work         ;
+;             |mux_pjc:auto_generated| ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst2|mux:inst13|lpm_mux:$00001|mux_pjc:auto_generated ; work         ;
+;       |mux:inst14|                   ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst2|mux:inst14                                       ; work         ;
+;          |lpm_mux:$00001|            ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst2|mux:inst14|lpm_mux:$00001                        ; work         ;
+;             |mux_pjc:auto_generated| ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst2|mux:inst14|lpm_mux:$00001|mux_pjc:auto_generated ; work         ;
+;    |carry_select_unit4:inst3|        ; 7 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst3                                                  ; work         ;
+;       |full_adder:inst6|             ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst3|full_adder:inst6                                 ; work         ;
+;          |half_adder:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst3|full_adder:inst6|half_adder:inst                 ; work         ;
+;       |mux:inst10|                   ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst3|mux:inst10                                       ; work         ;
+;          |lpm_mux:$00001|            ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst3|mux:inst10|lpm_mux:$00001                        ; work         ;
+;             |mux_pjc:auto_generated| ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst3|mux:inst10|lpm_mux:$00001|mux_pjc:auto_generated ; work         ;
+;       |mux:inst11|                   ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst3|mux:inst11                                       ; work         ;
+;          |lpm_mux:$00001|            ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst3|mux:inst11|lpm_mux:$00001                        ; work         ;
+;             |mux_pjc:auto_generated| ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst3|mux:inst11|lpm_mux:$00001|mux_pjc:auto_generated ; work         ;
+;       |mux:inst12|                   ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst3|mux:inst12                                       ; work         ;
+;          |lpm_mux:$00001|            ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst3|mux:inst12|lpm_mux:$00001                        ; work         ;
+;             |mux_pjc:auto_generated| ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst3|mux:inst12|lpm_mux:$00001|mux_pjc:auto_generated ; work         ;
+;       |mux:inst13|                   ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst3|mux:inst13                                       ; work         ;
+;          |lpm_mux:$00001|            ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst3|mux:inst13|lpm_mux:$00001                        ; work         ;
+;             |mux_pjc:auto_generated| ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst3|mux:inst13|lpm_mux:$00001|mux_pjc:auto_generated ; work         ;
+;       |mux:inst14|                   ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst3|mux:inst14                                       ; work         ;
+;          |lpm_mux:$00001|            ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst3|mux:inst14|lpm_mux:$00001                        ; work         ;
+;             |mux_pjc:auto_generated| ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst3|mux:inst14|lpm_mux:$00001|mux_pjc:auto_generated ; work         ;
+;    |carry_select_unit4:inst|         ; 6 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst                                                   ; work         ;
+;       |mux:inst10|                   ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst|mux:inst10                                        ; work         ;
+;          |lpm_mux:$00001|            ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst|mux:inst10|lpm_mux:$00001                         ; work         ;
+;             |mux_pjc:auto_generated| ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst|mux:inst10|lpm_mux:$00001|mux_pjc:auto_generated  ; work         ;
+;       |mux:inst11|                   ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst|mux:inst11                                        ; work         ;
+;          |lpm_mux:$00001|            ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst|mux:inst11|lpm_mux:$00001                         ; work         ;
+;             |mux_pjc:auto_generated| ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst|mux:inst11|lpm_mux:$00001|mux_pjc:auto_generated  ; work         ;
+;       |mux:inst12|                   ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst|mux:inst12                                        ; work         ;
+;          |lpm_mux:$00001|            ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst|mux:inst12|lpm_mux:$00001                         ; work         ;
+;             |mux_pjc:auto_generated| ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst|mux:inst12|lpm_mux:$00001|mux_pjc:auto_generated  ; work         ;
+;       |mux:inst13|                   ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst|mux:inst13                                        ; work         ;
+;          |lpm_mux:$00001|            ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst|mux:inst13|lpm_mux:$00001                         ; work         ;
+;             |mux_pjc:auto_generated| ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst|mux:inst13|lpm_mux:$00001|mux_pjc:auto_generated  ; work         ;
+;       |mux:inst14|                   ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst|mux:inst14                                        ; work         ;
+;          |lpm_mux:$00001|            ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst|mux:inst14|lpm_mux:$00001                         ; work         ;
+;             |mux_pjc:auto_generated| ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |carr_select_16_using4|carry_select_unit4:inst|mux:inst14|lpm_mux:$00001|mux_pjc:auto_generated  ; work         ;
++--------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carry_select_unit4:inst3|MUX:inst14 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                 ;
+; WIDTHS         ; 1     ; Untyped                                                 ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carry_select_unit4:inst3|MUX:inst10 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                 ;
+; WIDTHS         ; 1     ; Untyped                                                 ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carry_select_unit4:inst3|MUX:inst11 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                 ;
+; WIDTHS         ; 1     ; Untyped                                                 ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carry_select_unit4:inst3|MUX:inst12 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                 ;
+; WIDTHS         ; 1     ; Untyped                                                 ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carry_select_unit4:inst3|MUX:inst13 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                 ;
+; WIDTHS         ; 1     ; Untyped                                                 ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carry_select_unit4:inst2|MUX:inst14 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                 ;
+; WIDTHS         ; 1     ; Untyped                                                 ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carry_select_unit4:inst2|MUX:inst10 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                 ;
+; WIDTHS         ; 1     ; Untyped                                                 ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carry_select_unit4:inst2|MUX:inst11 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                 ;
+; WIDTHS         ; 1     ; Untyped                                                 ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carry_select_unit4:inst2|MUX:inst12 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                 ;
+; WIDTHS         ; 1     ; Untyped                                                 ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carry_select_unit4:inst2|MUX:inst13 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                 ;
+; WIDTHS         ; 1     ; Untyped                                                 ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carry_select_unit4:inst1|MUX:inst14 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                 ;
+; WIDTHS         ; 1     ; Untyped                                                 ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carry_select_unit4:inst1|MUX:inst10 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                 ;
+; WIDTHS         ; 1     ; Untyped                                                 ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carry_select_unit4:inst1|MUX:inst11 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                 ;
+; WIDTHS         ; 1     ; Untyped                                                 ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carry_select_unit4:inst1|MUX:inst12 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                 ;
+; WIDTHS         ; 1     ; Untyped                                                 ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carry_select_unit4:inst1|MUX:inst13 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                 ;
+; WIDTHS         ; 1     ; Untyped                                                 ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carry_select_unit4:inst|MUX:inst14 ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                ;
+; WIDTHS         ; 1     ; Untyped                                                ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carry_select_unit4:inst|MUX:inst10 ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                ;
+; WIDTHS         ; 1     ; Untyped                                                ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carry_select_unit4:inst|MUX:inst11 ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                ;
+; WIDTHS         ; 1     ; Untyped                                                ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carry_select_unit4:inst|MUX:inst12 ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                ;
+; WIDTHS         ; 1     ; Untyped                                                ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carry_select_unit4:inst|MUX:inst13 ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                ;
+; WIDTHS         ; 1     ; Untyped                                                ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_lcell_comb     ; 30                          ;
+;     normal            ; 30                          ;
+;         2 data inputs ; 5                           ;
+;         3 data inputs ; 7                           ;
+;         4 data inputs ; 3                           ;
+;         5 data inputs ; 8                           ;
+;         6 data inputs ; 7                           ;
+; boundary_port         ; 50                          ;
+;                       ;                             ;
+; Max LUT depth         ; 7.00                        ;
+; Average LUT depth     ; 4.60                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+    Info: Processing started: Sun Mar 04 10:06:51 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off HW1 -c HW1
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file half_adder.bdf
+    Info (12023): Found entity 1: half_adder
+Info (12021): Found 1 design units, including 1 entities, in source file full_adder.bdf
+    Info (12023): Found entity 1: full_adder
+Info (12021): Found 1 design units, including 1 entities, in source file ripple_carry_adder.bdf
+    Info (12023): Found entity 1: ripple_carry_adder
+Info (12021): Found 1 design units, including 1 entities, in source file carry_select_adder_unit.bdf
+    Info (12023): Found entity 1: carry_select_adder_unit
+Info (12021): Found 1 design units, including 1 entities, in source file carry_select_adder_16.bdf
+    Info (12023): Found entity 1: carry_select_adder_16
+Info (12021): Found 1 design units, including 1 entities, in source file carry_select_unit4.bdf
+    Info (12023): Found entity 1: carry_select_unit4
+Info (12021): Found 1 design units, including 1 entities, in source file carr_select_16_using4.bdf
+    Info (12023): Found entity 1: carr_select_16_using4
+Info (12127): Elaborating entity "carr_select_16_using4" for the top level hierarchy
+Info (12128): Elaborating entity "carry_select_unit4" for hierarchy "carry_select_unit4:inst3"
+Warning (275085): Found inconsistent dimensions for element "C_Out"
+Warning (275085): Found inconsistent dimensions for element "C_Out"
+Warning (275085): Found inconsistent dimensions for element "C_Out"
+Warning (275080): Converted elements in bus name "C_out" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "C_out[1]" to "C_out1"
+    Warning (275081): Converted element name(s) from "C_out[0]" to "C_out0"
+    Warning (275081): Converted element name(s) from "C_out[1..0]" to "C_out1..0"
+Info (12128): Elaborating entity "MUX" for hierarchy "carry_select_unit4:inst3|MUX:inst14"
+Info (12130): Elaborated megafunction instantiation "carry_select_unit4:inst3|MUX:inst14"
+Info (12133): Instantiated megafunction "carry_select_unit4:inst3|MUX:inst14" with the following parameter:
+    Info (12134): Parameter "WIDTH" = "2"
+    Info (12134): Parameter "WIDTHS" = "1"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "carry_select_unit4:inst3|MUX:inst14|lpm_mux:$00001" File: c:/altera_lite/15.1/quartus/libraries/megafunctions/mux.tdf Line: 44
+Info (12131): Elaborated megafunction instantiation "carry_select_unit4:inst3|MUX:inst14|lpm_mux:$00001", which is child of megafunction instantiation "carry_select_unit4:inst3|MUX:inst14" File: c:/altera_lite/15.1/quartus/libraries/megafunctions/mux.tdf Line: 44
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_pjc.tdf
+    Info (12023): Found entity 1: mux_pjc File: D:/University/Courses/Computer Architecture/HW1/db/mux_pjc.tdf Line: 23
+Info (12128): Elaborating entity "mux_pjc" for hierarchy "carry_select_unit4:inst3|MUX:inst14|lpm_mux:$00001|mux_pjc:auto_generated" File: c:/altera_lite/15.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
+Info (12128): Elaborating entity "full_adder" for hierarchy "carry_select_unit4:inst3|full_adder:inst3"
+Info (12128): Elaborating entity "half_adder" for hierarchy "carry_select_unit4:inst3|full_adder:inst3|half_adder:inst1"
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 80 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 33 input pins
+    Info (21059): Implemented 17 output pins
+    Info (21061): Implemented 30 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 892 megabytes
+    Info: Processing ended: Sun Mar 04 10:07:13 2018
+    Info: Elapsed time: 00:00:22
+    Info: Total CPU time (on all processors): 00:00:39
+
+

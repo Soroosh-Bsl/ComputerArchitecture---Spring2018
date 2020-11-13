@@ -1,0 +1,222 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/University/Courses/Computer Architecture/HW2/Q6/simulation/qsim
+vbank_register
+Z1 !s110 1520591635
+!i10b 1
+!s100 k2;Gai=YM^EXPDZH0kLLC3
+IEhd6>c4GJ`KC;f?m3^_0m1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1520591634
+Z3 8Memory.vo
+Z4 FMemory.vo
+Z5 L0 32
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1520591635.000000
+Z8 !s107 Memory.vo|
+Z9 !s90 -work|work|Memory.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vbank_register_vlg_vec_tst
+R1
+!i10b 1
+!s100 4`T7HQ1A4^TY=[OC@BY130
+Iff`Nb>aMR?357NVB8F9I80
+R2
+R0
+w1520591627
+Z12 8Waveform.vwf.vt
+Z13 FWaveform.vwf.vt
+Z14 L0 30
+R6
+r1
+!s85 0
+31
+R7
+Z15 !s107 Waveform.vwf.vt|
+Z16 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+vdecoder
+Z17 !s110 1520584718
+!i10b 1
+!s100 `efWgQ7l7[76gGCLYgLkh1
+IFbOaZSQKb0VCc9oVN5C1?2
+R2
+R0
+w1520584717
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z18 !s108 1520584718.000000
+R8
+R9
+!i113 1
+R10
+R11
+vdecoder_vlg_vec_tst
+R17
+!i10b 1
+!s100 a=<094LJTSCQKPNe3GJkN2
+Iz:;a]@D>[[mncGC:FmSB?0
+R2
+R0
+w1520584708
+R12
+R13
+R14
+R6
+r1
+!s85 0
+31
+R18
+R15
+R16
+!i113 1
+R10
+R11
+vMemory
+Z19 !s110 1523167131
+!i10b 1
+!s100 79lM]3eHXO`i4LEYfgz881
+IfZ?acll2Mk`7j3bzaJUh70
+R2
+R0
+w1523167128
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z20 !s108 1523167131.000000
+R8
+R9
+!i113 1
+R10
+R11
+n@memory
+vMemory_vlg_vec_tst
+R19
+!i10b 1
+!s100 F1GjJ4oLZ9VhGh:dXzgR61
+IGoSPZIG5;Q]FnS2AKgF9;1
+R2
+R0
+w1523167118
+R12
+R13
+R14
+R6
+r1
+!s85 0
+31
+R20
+R15
+R16
+!i113 1
+R10
+R11
+n@memory_vlg_vec_tst
+vregister
+!s110 1520580468
+!i10b 1
+!s100 AVK>?jS4d[_YnP7W5nd7_0
+IFB>hg<7PU3=_PRUSP8nVD1
+R2
+R0
+w1520580467
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z21 !s108 1520580468.000000
+R8
+R9
+!i113 1
+R10
+R11
+vregister_vlg_vec_tst
+!s110 1520580469
+!i10b 1
+!s100 DB9h:iBmAl]=Nk@CdDaRP2
+IdUR[zF1;SfKIlzScCIdc72
+R2
+R0
+w1520580462
+R12
+R13
+R14
+R6
+r1
+!s85 0
+31
+R21
+R15
+R16
+!i113 1
+R10
+R11
+vsignal_decoder
+Z22 !s110 1520591259
+!i10b 1
+!s100 9S`YM0B7<?LGd6@Zd>CSK0
+Iol[ei;4H0zB?GCCfB7Eg50
+R2
+R0
+w1520591258
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z23 !s108 1520591259.000000
+R8
+R9
+!i113 1
+R10
+R11
+vsignal_decoder_vlg_vec_tst
+R22
+!i10b 1
+!s100 hM3Pj;4KBBnK;D?`0>zXC1
+I5]60c`200SfmSbD2?cOdI3
+R2
+R0
+w1520591252
+R12
+R13
+R14
+R6
+r1
+!s85 0
+31
+R23
+R15
+R16
+!i113 1
+R10
+R11

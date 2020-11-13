@@ -1,0 +1,365 @@
+// Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus Prime License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "04/08/2018 10:28:38"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          Memory
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module Memory_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg [2:0] Address_one;
+reg [2:0] Address_two;
+reg Clear;
+reg [2:0] ClearAddress;
+reg CLK;
+reg [2:0] WAddress;
+reg [15:0] WData;
+reg WEnable;
+// wires                                               
+wire [15:0] out_one;
+wire [15:0] out_two;
+
+// assign statements (if any)                          
+Memory i1 (
+// port map - connection between master ports and signals/registers   
+	.Address_one(Address_one),
+	.Address_two(Address_two),
+	.Clear(Clear),
+	.ClearAddress(ClearAddress),
+	.CLK(CLK),
+	.out_one(out_one),
+	.out_two(out_two),
+	.WAddress(WAddress),
+	.WData(WData),
+	.WEnable(WEnable)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+// Address_one[ 2 ]
+initial
+begin
+	Address_one[2] = 1'b0;
+	Address_one[2] = #190000 1'b1;
+	Address_one[2] = #40000 1'b0;
+	Address_one[2] = #40000 1'b1;
+	Address_one[2] = #40000 1'b0;
+	Address_one[2] = #210000 1'b1;
+	Address_one[2] = #70000 1'b0;
+end 
+// Address_one[ 1 ]
+initial
+begin
+	Address_one[1] = 1'b0;
+	Address_one[1] = #170000 1'b1;
+	# 20000;
+	repeat(4)
+	begin
+		Address_one[1] = 1'b0;
+		Address_one[1] = #20000 1'b1;
+		# 20000;
+	end
+	Address_one[1] = 1'b0;
+	Address_one[1] = #170000 1'b1;
+	Address_one[1] = #70000 1'b0;
+end 
+// Address_one[ 0 ]
+initial
+begin
+	Address_one[0] = 1'b0;
+	Address_one[0] = #520000 1'b1;
+	Address_one[0] = #70000 1'b0;
+end 
+// Address_two[ 2 ]
+initial
+begin
+	Address_two[2] = 1'b0;
+	Address_two[2] = #790000 1'b1;
+	Address_two[2] = #20000 1'b0;
+	Address_two[2] = #40000 1'b1;
+	Address_two[2] = #20000 1'b0;
+	Address_two[2] = #20000 1'b1;
+	Address_two[2] = #10000 1'b0;
+end 
+// Address_two[ 1 ]
+initial
+begin
+	Address_two[1] = 1'b0;
+	Address_two[1] = #510000 1'b1;
+	Address_two[1] = #200000 1'b0;
+	Address_two[1] = #80000 1'b1;
+	Address_two[1] = #40000 1'b0;
+	Address_two[1] = #40000 1'b1;
+	Address_two[1] = #30000 1'b0;
+end 
+// Address_two[ 0 ]
+initial
+begin
+	Address_two[0] = 1'b0;
+	Address_two[0] = #510000 1'b1;
+	Address_two[0] = #200000 1'b0;
+	Address_two[0] = #60000 1'b1;
+	Address_two[0] = #20000 1'b0;
+	Address_two[0] = #20000 1'b1;
+	Address_two[0] = #20000 1'b0;
+	Address_two[0] = #20000 1'b1;
+	Address_two[0] = #20000 1'b0;
+	Address_two[0] = #20000 1'b1;
+	Address_two[0] = #10000 1'b0;
+end 
+
+// Clear
+initial
+begin
+	Clear = 1'b1;
+	Clear = #230000 1'b0;
+	Clear = #20000 1'b1;
+	Clear = #300000 1'b0;
+	Clear = #40000 1'b1;
+	Clear = #240000 1'b0;
+	Clear = #10000 1'b1;
+	Clear = #70000 1'b0;
+	Clear = #30000 1'b1;
+	Clear = #50000 1'b0;
+end 
+// ClearAddress[ 2 ]
+initial
+begin
+	ClearAddress[2] = 1'b1;
+	ClearAddress[2] = #180000 1'b0;
+	ClearAddress[2] = #20000 1'b1;
+	ClearAddress[2] = #20000 1'b0;
+	ClearAddress[2] = #40000 1'b1;
+	ClearAddress[2] = #20000 1'b0;
+	ClearAddress[2] = #20000 1'b1;
+	ClearAddress[2] = #180000 1'b0;
+	ClearAddress[2] = #160000 1'b1;
+	ClearAddress[2] = #130000 1'b0;
+	ClearAddress[2] = #60000 1'b1;
+end 
+// ClearAddress[ 1 ]
+initial
+begin
+	ClearAddress[1] = 1'b1;
+	ClearAddress[1] = #200000 1'b0;
+	ClearAddress[1] = #40000 1'b1;
+	ClearAddress[1] = #40000 1'b0;
+	ClearAddress[1] = #40000 1'b1;
+	ClearAddress[1] = #160000 1'b0;
+	ClearAddress[1] = #160000 1'b1;
+end 
+// ClearAddress[ 0 ]
+initial
+begin
+	ClearAddress[0] = 1'b1;
+	ClearAddress[0] = #180000 1'b0;
+	# 20000;
+	repeat(3)
+	begin
+		ClearAddress[0] = 1'b1;
+		ClearAddress[0] = #20000 1'b0;
+		# 20000;
+	end
+	ClearAddress[0] = 1'b1;
+	ClearAddress[0] = #160000 1'b0;
+	ClearAddress[0] = #160000 1'b1;
+	ClearAddress[0] = #130000 1'b0;
+	ClearAddress[0] = #60000 1'b1;
+end 
+
+// CLK
+always
+begin
+	CLK = 1'b0;
+	CLK = #5000 1'b1;
+	#5000;
+end 
+// WAddress[ 2 ]
+initial
+begin
+	WAddress[2] = 1'b0;
+	WAddress[2] = #110000 1'b1;
+	WAddress[2] = #60000 1'b0;
+end 
+// WAddress[ 1 ]
+initial
+begin
+	WAddress[1] = 1'b0;
+	WAddress[1] = #70000 1'b1;
+	WAddress[1] = #40000 1'b0;
+	WAddress[1] = #40000 1'b1;
+	WAddress[1] = #20000 1'b0;
+end 
+// WAddress[ 0 ]
+initial
+begin
+	WAddress[0] = 1'b0;
+	WAddress[0] = #50000 1'b1;
+	# 20000;
+	repeat(2)
+	begin
+		WAddress[0] = 1'b0;
+		WAddress[0] = #20000 1'b1;
+		# 20000;
+	end
+	WAddress[0] = 1'b0;
+end 
+// WData[ 15 ]
+initial
+begin
+	WData[15] = 1'b0;
+end 
+// WData[ 14 ]
+initial
+begin
+	WData[14] = 1'b0;
+end 
+// WData[ 13 ]
+initial
+begin
+	WData[13] = 1'b0;
+end 
+// WData[ 12 ]
+initial
+begin
+	WData[12] = 1'b0;
+end 
+// WData[ 11 ]
+initial
+begin
+	WData[11] = 1'b0;
+end 
+// WData[ 10 ]
+initial
+begin
+	WData[10] = 1'b0;
+end 
+// WData[ 9 ]
+initial
+begin
+	WData[9] = 1'b0;
+end 
+// WData[ 8 ]
+initial
+begin
+	WData[8] = 1'b0;
+end 
+// WData[ 7 ]
+initial
+begin
+	WData[7] = 1'b0;
+end 
+// WData[ 6 ]
+initial
+begin
+	WData[6] = 1'b0;
+end 
+// WData[ 5 ]
+initial
+begin
+	WData[5] = 1'b0;
+end 
+// WData[ 4 ]
+initial
+begin
+	WData[4] = 1'b0;
+	WData[4] = #710000 1'b1;
+	WData[4] = #280000 1'b0;
+end 
+// WData[ 3 ]
+initial
+begin
+	WData[3] = 1'b0;
+	WData[3] = #390000 1'b1;
+	WData[3] = #320000 1'b0;
+end 
+// WData[ 2 ]
+initial
+begin
+	WData[2] = 1'b0;
+	WData[2] = #230000 1'b1;
+	WData[2] = #160000 1'b0;
+	WData[2] = #160000 1'b1;
+	WData[2] = #160000 1'b0;
+	WData[2] = #160000 1'b1;
+	WData[2] = #120000 1'b0;
+end 
+// WData[ 1 ]
+initial
+begin
+	WData[1] = 1'b1;
+	WData[1] = #20000 1'b0;
+	WData[1] = #130000 1'b1;
+	# 80000;
+	repeat(4)
+	begin
+		WData[1] = 1'b0;
+		WData[1] = #80000 1'b1;
+		# 80000;
+	end
+	WData[1] = 1'b0;
+	WData[1] = #80000 1'b1;
+	WData[1] = #40000 1'b0;
+end 
+// WData[ 0 ]
+initial
+begin
+	WData[0] = 1'b1;
+	WData[0] = #20000 1'b0;
+	WData[0] = #90000 1'b1;
+	# 40000;
+	repeat(10)
+	begin
+		WData[0] = 1'b0;
+		WData[0] = #40000 1'b1;
+		# 40000;
+	end
+	WData[0] = 1'b0;
+end 
+
+// WEnable
+initial
+begin
+	WEnable = 1'b1;
+	WEnable = #20000 1'b0;
+	WEnable = #250000 1'b1;
+	WEnable = #60000 1'b0;
+	WEnable = #100000 1'b1;
+	WEnable = #60000 1'b0;
+	WEnable = #20000 1'b1;
+	WEnable = #20000 1'b0;
+	WEnable = #20000 1'b1;
+	WEnable = #20000 1'b0;
+	WEnable = #40000 1'b1;
+	WEnable = #60000 1'b0;
+	WEnable = #80000 1'b1;
+	WEnable = #60000 1'b0;
+	WEnable = #20000 1'b1;
+	WEnable = #20000 1'b0;
+end 
+endmodule
+

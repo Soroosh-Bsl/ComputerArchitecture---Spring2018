@@ -1,0 +1,521 @@
+Analysis & Synthesis report for Memory
+Fri Mar 09 14:11:34 2018
+Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: bank_register:inst|mux8:inst8|BUSMUX:inst6
+ 11. Parameter Settings for User Entity Instance: bank_register:inst|mux8:inst8|BUSMUX:inst4
+ 12. Parameter Settings for User Entity Instance: bank_register:inst|mux8:inst8|BUSMUX:inst
+ 13. Parameter Settings for User Entity Instance: bank_register:inst|mux8:inst8|BUSMUX:inst1
+ 14. Parameter Settings for User Entity Instance: bank_register:inst|mux8:inst8|BUSMUX:inst5
+ 15. Parameter Settings for User Entity Instance: bank_register:inst|mux8:inst8|BUSMUX:inst2
+ 16. Parameter Settings for User Entity Instance: bank_register:inst|mux8:inst8|BUSMUX:inst3
+ 17. Parameter Settings for User Entity Instance: bank_register:inst|mux8:inst9|BUSMUX:inst6
+ 18. Parameter Settings for User Entity Instance: bank_register:inst|mux8:inst9|BUSMUX:inst4
+ 19. Parameter Settings for User Entity Instance: bank_register:inst|mux8:inst9|BUSMUX:inst
+ 20. Parameter Settings for User Entity Instance: bank_register:inst|mux8:inst9|BUSMUX:inst1
+ 21. Parameter Settings for User Entity Instance: bank_register:inst|mux8:inst9|BUSMUX:inst5
+ 22. Parameter Settings for User Entity Instance: bank_register:inst|mux8:inst9|BUSMUX:inst2
+ 23. Parameter Settings for User Entity Instance: bank_register:inst|mux8:inst9|BUSMUX:inst3
+ 24. Post-Synthesis Netlist Statistics for Top Partition
+ 25. Elapsed Time Per Partition
+ 26. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri Mar 09 14:11:34 2018       ;
+; Quartus Prime Version              ; 15.1.0 Build 185 10/21/2015 SJ Lite Edition ;
+; Revision Name                      ; Memory                                      ;
+; Top-level Entity Name              ; Memory                                      ;
+; Family                             ; Cyclone IV GX                               ;
+; Total logic elements               ; 308                                         ;
+;     Total combinational functions  ; 180                                         ;
+;     Dedicated logic registers      ; 128                                         ;
+; Total registers                    ; 128                                         ;
+; Total pins                         ; 63                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total GXB Receiver Channel PCS     ; 0                                           ;
+; Total GXB Receiver Channel PMA     ; 0                                           ;
+; Total GXB Transmitter Channel PCS  ; 0                                           ;
+; Total GXB Transmitter Channel PMA  ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                                      ; Memory             ; Memory             ;
+; Family name                                                                ; Cyclone IV GX      ; Cyclone V          ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                     ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                           ; Library ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------+---------+
+; half_adder.bdf                   ; yes             ; User Block Diagram/Schematic File  ; D:/University/Courses/Computer Architecture/HW2/Q6/half_adder.bdf      ;         ;
+; full_adder.bdf                   ; yes             ; User Block Diagram/Schematic File  ; D:/University/Courses/Computer Architecture/HW2/Q6/full_adder.bdf      ;         ;
+; mux8.bdf                         ; yes             ; User Block Diagram/Schematic File  ; D:/University/Courses/Computer Architecture/HW2/Q6/mux8.bdf            ;         ;
+; register.bdf                     ; yes             ; User Block Diagram/Schematic File  ; D:/University/Courses/Computer Architecture/HW2/Q6/register.bdf        ;         ;
+; bank_register.bdf                ; yes             ; User Block Diagram/Schematic File  ; D:/University/Courses/Computer Architecture/HW2/Q6/bank_register.bdf   ;         ;
+; decoder.bdf                      ; yes             ; User Block Diagram/Schematic File  ; D:/University/Courses/Computer Architecture/HW2/Q6/decoder.bdf         ;         ;
+; signal_decoder.bdf               ; yes             ; User Block Diagram/Schematic File  ; D:/University/Courses/Computer Architecture/HW2/Q6/signal_decoder.bdf  ;         ;
+; address_handler.bdf              ; yes             ; User Block Diagram/Schematic File  ; D:/University/Courses/Computer Architecture/HW2/Q6/address_handler.bdf ;         ;
+; Memory.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/University/Courses/Computer Architecture/HW2/Q6/Memory.bdf          ;         ;
+; busmux.tdf                       ; yes             ; Megafunction                       ; c:/altera_lite/15.1/quartus/libraries/megafunctions/busmux.tdf         ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                       ; c:/altera_lite/15.1/quartus/libraries/megafunctions/lpm_mux.inc        ;         ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                       ; c:/altera_lite/15.1/quartus/libraries/megafunctions/lpm_mux.tdf        ;         ;
+; aglobal151.inc                   ; yes             ; Megafunction                       ; c:/altera_lite/15.1/quartus/libraries/megafunctions/aglobal151.inc     ;         ;
+; muxlut.inc                       ; yes             ; Megafunction                       ; c:/altera_lite/15.1/quartus/libraries/megafunctions/muxlut.inc         ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                       ; c:/altera_lite/15.1/quartus/libraries/megafunctions/bypassff.inc       ;         ;
+; altshift.inc                     ; yes             ; Megafunction                       ; c:/altera_lite/15.1/quartus/libraries/megafunctions/altshift.inc       ;         ;
+; db/mux_n0d.tdf                   ; yes             ; Auto-Generated Megafunction        ; D:/University/Courses/Computer Architecture/HW2/Q6/db/mux_n0d.tdf      ;         ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary ;
++--------------------------+------------------+
+; Resource                 ; Usage            ;
++--------------------------+------------------+
+; I/O pins                 ; 63               ;
+;                          ;                  ;
+; DSP block 9-bit elements ; 0                ;
+;                          ;                  ;
+; Maximum fan-out node     ; CLK~input        ;
+; Maximum fan-out          ; 128              ;
+; Total fan-out            ; 1289             ;
+; Average fan-out          ; 2.97             ;
++--------------------------+------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                       ;
++-----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node              ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                      ; Library Name ;
++-----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+------------------------------------------------------------------------------------------+--------------+
+; |Memory                                 ; 180 (0)           ; 128 (0)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 63   ; 0            ; |Memory                                                                                  ; work         ;
+;    |address_handler:inst4|              ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Memory|address_handler:inst4                                                            ; work         ;
+;       |full_adder:inst1|                ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Memory|address_handler:inst4|full_adder:inst1                                           ; work         ;
+;          |half_adder:inst1|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Memory|address_handler:inst4|full_adder:inst1|half_adder:inst1                          ; work         ;
+;       |full_adder:inst2|                ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Memory|address_handler:inst4|full_adder:inst2                                           ; work         ;
+;          |half_adder:inst1|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Memory|address_handler:inst4|full_adder:inst2|half_adder:inst1                          ; work         ;
+;    |address_handler:inst5|              ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Memory|address_handler:inst5                                                            ; work         ;
+;       |full_adder:inst1|                ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Memory|address_handler:inst5|full_adder:inst1                                           ; work         ;
+;          |half_adder:inst1|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Memory|address_handler:inst5|full_adder:inst1|half_adder:inst1                          ; work         ;
+;       |full_adder:inst2|                ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Memory|address_handler:inst5|full_adder:inst2                                           ; work         ;
+;          |half_adder:inst1|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Memory|address_handler:inst5|full_adder:inst2|half_adder:inst1                          ; work         ;
+;    |bank_register:inst|                 ; 176 (0)           ; 128 (0)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Memory|bank_register:inst                                                               ; work         ;
+;       |mux8:inst8|                      ; 80 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Memory|bank_register:inst|mux8:inst8                                                    ; work         ;
+;          |busmux:inst6|                 ; 80 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Memory|bank_register:inst|mux8:inst8|busmux:inst6                                       ; work         ;
+;             |lpm_mux:$00000|            ; 80 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Memory|bank_register:inst|mux8:inst8|busmux:inst6|lpm_mux:$00000                        ; work         ;
+;                |mux_n0d:auto_generated| ; 80 (80)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Memory|bank_register:inst|mux8:inst8|busmux:inst6|lpm_mux:$00000|mux_n0d:auto_generated ; work         ;
+;       |mux8:inst9|                      ; 80 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Memory|bank_register:inst|mux8:inst9                                                    ; work         ;
+;          |busmux:inst6|                 ; 80 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Memory|bank_register:inst|mux8:inst9|busmux:inst6                                       ; work         ;
+;             |lpm_mux:$00000|            ; 80 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Memory|bank_register:inst|mux8:inst9|busmux:inst6|lpm_mux:$00000                        ; work         ;
+;                |mux_n0d:auto_generated| ; 80 (80)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Memory|bank_register:inst|mux8:inst9|busmux:inst6|lpm_mux:$00000|mux_n0d:auto_generated ; work         ;
+;       |register:inst1|                  ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Memory|bank_register:inst|register:inst1                                                ; work         ;
+;       |register:inst2|                  ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Memory|bank_register:inst|register:inst2                                                ; work         ;
+;       |register:inst3|                  ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Memory|bank_register:inst|register:inst3                                                ; work         ;
+;       |register:inst4|                  ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Memory|bank_register:inst|register:inst4                                                ; work         ;
+;       |register:inst5|                  ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Memory|bank_register:inst|register:inst5                                                ; work         ;
+;       |register:inst6|                  ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Memory|bank_register:inst|register:inst6                                                ; work         ;
+;       |register:inst7|                  ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Memory|bank_register:inst|register:inst7                                                ; work         ;
+;       |register:inst|                   ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Memory|bank_register:inst|register:inst                                                 ; work         ;
+;       |signal_decoder:inst10|           ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Memory|bank_register:inst|signal_decoder:inst10                                         ; work         ;
+;          |decoder:inst|                 ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Memory|bank_register:inst|signal_decoder:inst10|decoder:inst                            ; work         ;
+;       |signal_decoder:inst11|           ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Memory|bank_register:inst|signal_decoder:inst11                                         ; work         ;
+;          |decoder:inst|                 ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Memory|bank_register:inst|signal_decoder:inst11|decoder:inst                            ; work         ;
++-----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 128   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 128   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 128   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------+
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |Memory|bank_register:inst|mux8:inst8|busmux:inst6|lpm_mux:$00000|mux_n0d:auto_generated|result_node[7]  ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |Memory|bank_register:inst|mux8:inst9|busmux:inst6|lpm_mux:$00000|mux_n0d:auto_generated|result_node[10] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bank_register:inst|mux8:inst8|BUSMUX:inst6 ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; WIDTH          ; 16    ; Untyped                                                        ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bank_register:inst|mux8:inst8|BUSMUX:inst4 ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; WIDTH          ; 16    ; Untyped                                                        ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bank_register:inst|mux8:inst8|BUSMUX:inst ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 16    ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bank_register:inst|mux8:inst8|BUSMUX:inst1 ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; WIDTH          ; 16    ; Untyped                                                        ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bank_register:inst|mux8:inst8|BUSMUX:inst5 ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; WIDTH          ; 16    ; Untyped                                                        ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bank_register:inst|mux8:inst8|BUSMUX:inst2 ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; WIDTH          ; 16    ; Untyped                                                        ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bank_register:inst|mux8:inst8|BUSMUX:inst3 ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; WIDTH          ; 16    ; Untyped                                                        ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bank_register:inst|mux8:inst9|BUSMUX:inst6 ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; WIDTH          ; 16    ; Untyped                                                        ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bank_register:inst|mux8:inst9|BUSMUX:inst4 ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; WIDTH          ; 16    ; Untyped                                                        ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bank_register:inst|mux8:inst9|BUSMUX:inst ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 16    ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bank_register:inst|mux8:inst9|BUSMUX:inst1 ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; WIDTH          ; 16    ; Untyped                                                        ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bank_register:inst|mux8:inst9|BUSMUX:inst5 ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; WIDTH          ; 16    ; Untyped                                                        ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bank_register:inst|mux8:inst9|BUSMUX:inst2 ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; WIDTH          ; 16    ; Untyped                                                        ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bank_register:inst|mux8:inst9|BUSMUX:inst3 ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; WIDTH          ; 16    ; Untyped                                                        ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 63                          ;
+; cycloneiii_ff         ; 128                         ;
+;     ENA CLR           ; 128                         ;
+; cycloneiii_lcell_comb ; 180                         ;
+;     normal            ; 180                         ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 34                          ;
+;         4 data inputs ; 144                         ;
+;                       ;                             ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 2.51                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+    Info: Processing started: Fri Mar 09 14:11:21 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Memory -c Memory
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file half_adder.bdf
+    Info (12023): Found entity 1: half_adder
+Info (12021): Found 1 design units, including 1 entities, in source file full_adder.bdf
+    Info (12023): Found entity 1: full_adder
+Info (12021): Found 1 design units, including 1 entities, in source file mux8.bdf
+    Info (12023): Found entity 1: mux8
+Info (12021): Found 1 design units, including 1 entities, in source file register.bdf
+    Info (12023): Found entity 1: register
+Info (12021): Found 1 design units, including 1 entities, in source file bank_register.bdf
+    Info (12023): Found entity 1: bank_register
+Info (12021): Found 1 design units, including 1 entities, in source file decoder.bdf
+    Info (12023): Found entity 1: decoder
+Info (12021): Found 1 design units, including 1 entities, in source file signal_decoder.bdf
+    Info (12023): Found entity 1: signal_decoder
+Info (12021): Found 1 design units, including 1 entities, in source file address_handler.bdf
+    Info (12023): Found entity 1: address_handler
+Info (12021): Found 1 design units, including 1 entities, in source file memory.bdf
+    Info (12023): Found entity 1: Memory
+Info (12127): Elaborating entity "Memory" for the top level hierarchy
+Info (12128): Elaborating entity "bank_register" for hierarchy "bank_register:inst"
+Warning (275011): Block or symbol "NOT" of instance "inst14" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst16" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst18" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst20" overlaps another block or symbol
+Info (12128): Elaborating entity "mux8" for hierarchy "bank_register:inst|mux8:inst8"
+Info (12128): Elaborating entity "BUSMUX" for hierarchy "bank_register:inst|mux8:inst8|BUSMUX:inst6"
+Info (12130): Elaborated megafunction instantiation "bank_register:inst|mux8:inst8|BUSMUX:inst6"
+Info (12133): Instantiated megafunction "bank_register:inst|mux8:inst8|BUSMUX:inst6" with the following parameter:
+    Info (12134): Parameter "WIDTH" = "16"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "bank_register:inst|mux8:inst8|BUSMUX:inst6|lpm_mux:$00000" File: c:/altera_lite/15.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
+Info (12131): Elaborated megafunction instantiation "bank_register:inst|mux8:inst8|BUSMUX:inst6|lpm_mux:$00000", which is child of megafunction instantiation "bank_register:inst|mux8:inst8|BUSMUX:inst6" File: c:/altera_lite/15.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_n0d.tdf
+    Info (12023): Found entity 1: mux_n0d File: D:/University/Courses/Computer Architecture/HW2/Q6/db/mux_n0d.tdf Line: 23
+Info (12128): Elaborating entity "mux_n0d" for hierarchy "bank_register:inst|mux8:inst8|BUSMUX:inst6|lpm_mux:$00000|mux_n0d:auto_generated" File: c:/altera_lite/15.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
+Info (12128): Elaborating entity "register" for hierarchy "bank_register:inst|register:inst7"
+Info (12128): Elaborating entity "signal_decoder" for hierarchy "bank_register:inst|signal_decoder:inst11"
+Info (12128): Elaborating entity "decoder" for hierarchy "bank_register:inst|signal_decoder:inst11|decoder:inst"
+Info (12128): Elaborating entity "address_handler" for hierarchy "address_handler:inst4"
+Info (12128): Elaborating entity "full_adder" for hierarchy "address_handler:inst4|full_adder:inst"
+Info (12128): Elaborating entity "half_adder" for hierarchy "address_handler:inst4|full_adder:inst|half_adder:inst1"
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 371 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 31 input pins
+    Info (21059): Implemented 32 output pins
+    Info (21061): Implemented 308 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 895 megabytes
+    Info: Processing ended: Fri Mar 09 14:11:34 2018
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:29
+
+

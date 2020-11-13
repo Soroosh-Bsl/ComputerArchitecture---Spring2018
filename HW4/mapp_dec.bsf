@@ -1,0 +1,177 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 352 400)
+	(text "mapp_dec" (rect 5 0 80 16)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 366 41 380)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "data[7..0]" (rect 0 0 94 16)(font "Arial" (font_size 8)))
+		(text "data[7..0]" (rect 21 27 115 43)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 336 32)
+		(output)
+		(text "eq_zero[9..0]" (rect 0 0 122 16)(font "Arial" (font_size 8)))
+		(text "eq_zero[9..0]" (rect 193 27 315 43)(font "Arial" (font_size 8)))
+		(line (pt 336 32)(pt 320 32)(line_width 3))
+	)
+	(port
+		(pt 336 48)
+		(output)
+		(text "eq_ten[9..0]" (rect 0 0 113 16)(font "Arial" (font_size 8)))
+		(text "eq_ten[9..0]" (rect 202 43 315 59)(font "Arial" (font_size 8)))
+		(line (pt 336 48)(pt 320 48)(line_width 3))
+	)
+	(port
+		(pt 336 64)
+		(output)
+		(text "eq_thirteen[9..0]" (rect 0 0 160 16)(font "Arial" (font_size 8)))
+		(text "eq_thirteen[9..0]" (rect 155 59 315 75)(font "Arial" (font_size 8)))
+		(line (pt 336 64)(pt 320 64)(line_width 3))
+	)
+	(port
+		(pt 336 80)
+		(output)
+		(text "eq_fifteen[9..0]" (rect 0 0 151 16)(font "Arial" (font_size 8)))
+		(text "eq_fifteen[9..0]" (rect 164 75 315 91)(font "Arial" (font_size 8)))
+		(line (pt 336 80)(pt 320 80)(line_width 3))
+	)
+	(port
+		(pt 336 96)
+		(output)
+		(text "eq_thirty_six[9..0]" (rect 0 0 179 16)(font "Arial" (font_size 8)))
+		(text "eq_thirty_six[9..0]" (rect 136 91 315 107)(font "Arial" (font_size 8)))
+		(line (pt 336 96)(pt 320 96)(line_width 3))
+	)
+	(port
+		(pt 336 112)
+		(output)
+		(text "eq_fifty_seven[9..0]" (rect 0 0 188 16)(font "Arial" (font_size 8)))
+		(text "eq_fifty_seven[9..0]" (rect 127 107 315 123)(font "Arial" (font_size 8)))
+		(line (pt 336 112)(pt 320 112)(line_width 3))
+	)
+	(port
+		(pt 336 128)
+		(output)
+		(text "eq_fifty_nine[9..0]" (rect 0 0 179 16)(font "Arial" (font_size 8)))
+		(text "eq_fifty_nine[9..0]" (rect 136 123 315 139)(font "Arial" (font_size 8)))
+		(line (pt 336 128)(pt 320 128)(line_width 3))
+	)
+	(port
+		(pt 336 144)
+		(output)
+		(text "eq_fifty_F[9..0]" (rect 0 0 151 16)(font "Arial" (font_size 8)))
+		(text "eq_fifty_F[9..0]" (rect 164 139 315 155)(font "Arial" (font_size 8)))
+		(line (pt 336 144)(pt 320 144)(line_width 3))
+	)
+	(port
+		(pt 336 160)
+		(output)
+		(text "eq_sixty[9..0]" (rect 0 0 132 16)(font "Arial" (font_size 8)))
+		(text "eq_sixty[9..0]" (rect 183 155 315 171)(font "Arial" (font_size 8)))
+		(line (pt 336 160)(pt 320 160)(line_width 3))
+	)
+	(port
+		(pt 336 176)
+		(output)
+		(text "eq_sixty_four[9..0]" (rect 0 0 179 16)(font "Arial" (font_size 8)))
+		(text "eq_sixty_four[9..0]" (rect 136 171 315 187)(font "Arial" (font_size 8)))
+		(line (pt 336 176)(pt 320 176)(line_width 3))
+	)
+	(port
+		(pt 336 192)
+		(output)
+		(text "eq_seventy_E[9..0]" (rect 0 0 169 16)(font "Arial" (font_size 8)))
+		(text "eq_seventy_E[9..0]" (rect 146 187 315 203)(font "Arial" (font_size 8)))
+		(line (pt 336 192)(pt 320 192)(line_width 3))
+	)
+	(port
+		(pt 336 208)
+		(output)
+		(text "eq_eighty[9..0]" (rect 0 0 141 16)(font "Arial" (font_size 8)))
+		(text "eq_eighty[9..0]" (rect 174 203 315 219)(font "Arial" (font_size 8)))
+		(line (pt 336 208)(pt 320 208)(line_width 3))
+	)
+	(port
+		(pt 336 224)
+		(output)
+		(text "eq_eighty_four[9..0]" (rect 0 0 188 16)(font "Arial" (font_size 8)))
+		(text "eq_eighty_four[9..0]" (rect 127 219 315 235)(font "Arial" (font_size 8)))
+		(line (pt 336 224)(pt 320 224)(line_width 3))
+	)
+	(port
+		(pt 336 240)
+		(output)
+		(text "eq_ninty_nine[9..0]" (rect 0 0 179 16)(font "Arial" (font_size 8)))
+		(text "eq_ninty_nine[9..0]" (rect 136 235 315 251)(font "Arial" (font_size 8)))
+		(line (pt 336 240)(pt 320 240)(line_width 3))
+	)
+	(port
+		(pt 336 256)
+		(output)
+		(text "eq_ninty_B[9..0]" (rect 0 0 151 16)(font "Arial" (font_size 8)))
+		(text "eq_ninty_B[9..0]" (rect 164 251 315 267)(font "Arial" (font_size 8)))
+		(line (pt 336 256)(pt 320 256)(line_width 3))
+	)
+	(port
+		(pt 336 272)
+		(output)
+		(text "eq_ninty_F[9..0]" (rect 0 0 151 16)(font "Arial" (font_size 8)))
+		(text "eq_ninty_F[9..0]" (rect 164 267 315 283)(font "Arial" (font_size 8)))
+		(line (pt 336 272)(pt 320 272)(line_width 3))
+	)
+	(port
+		(pt 336 288)
+		(output)
+		(text "eq_A_seven[9..0]" (rect 0 0 151 16)(font "Arial" (font_size 8)))
+		(text "eq_A_seven[9..0]" (rect 164 283 315 299)(font "Arial" (font_size 8)))
+		(line (pt 336 288)(pt 320 288)(line_width 3))
+	)
+	(port
+		(pt 336 304)
+		(output)
+		(text "eq_A_C[9..0]" (rect 0 0 113 16)(font "Arial" (font_size 8)))
+		(text "eq_A_C[9..0]" (rect 202 299 315 315)(font "Arial" (font_size 8)))
+		(line (pt 336 304)(pt 320 304)(line_width 3))
+	)
+	(port
+		(pt 336 320)
+		(output)
+		(text "eq_B_six[9..0]" (rect 0 0 132 16)(font "Arial" (font_size 8)))
+		(text "eq_B_six[9..0]" (rect 183 315 315 331)(font "Arial" (font_size 8)))
+		(line (pt 336 320)(pt 320 320)(line_width 3))
+	)
+	(port
+		(pt 336 336)
+		(output)
+		(text "eq_C_four[9..0]" (rect 0 0 141 16)(font "Arial" (font_size 8)))
+		(text "eq_C_four[9..0]" (rect 174 331 315 347)(font "Arial" (font_size 8)))
+		(line (pt 336 336)(pt 320 336)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 320 368))
+	)
+)
